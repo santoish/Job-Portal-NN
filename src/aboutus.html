@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="/Assets/Vector logo.png">
+    <title>About Us | Nova Nectar Services</title>
+</head>
+
+<body>
+    <nav class="md:flex md:items-center md:justify-around  px-5 py-3 z-50 max-w-[1200px] mx-auto">
+        <div class="logo flex items-center justify-between">
+            <span class="flex items-center justify-center">
+                <img src="/Assets/Nova Nectar Logo.jpg" alt="" class="w-[32px] md:w-[56px] inline rounded-full">
+                <h2 class="font-poppins ml-3 text-sm md:text-xl font-semibold">Nova Nectar Services</h2>
+            </span>
+            <span class="text-3xl text-black cursor-pointer md:hidden block">
+                <ion-icon name="menu-outline" onclick="toggleBox(this)"></ion-icon>
+            </span>
+        </div>
+        <ul id="box"
+            class="bg-pblue text-center md:flex md:items-center z-10 md:z-auto md:relative absolute md:bg-[transparent]  w-full left-0 md:w-auto md:py-0 py-6 md:pl-0 pl-5 md:opacity-100 opacity-0 top-[-400px] md:top-0 transition-all ease-in-out duration-500">
+            <li class="mx-3 my-3 md:my-0">
+                <a href="homepage.html"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Home</a>
+            </li>
+            <li class="mx-3 my-5 md:my-0">
+                <a href="#service"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Jobs</a>
+            </li>
+            <li class="mx-3 my-5 md:my-0">
+                <a href="aboutus.html"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">About
+                    Us</a>
+            </li>
+            <li class="mx-3 my-5 md:my-0">
+                <a href="#about"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Contact
+                    Us</a>
+            </li>
+            <li>
+                <div class="flex items-center justify-center">
+                    <div class="relative group">
+                        <button
+                            class="relative inline-block p-px font-semibold leading-6 text-white bg-dblue hover:shadow-2xl cursor-pointer rounded-2xl shadow-emerald-900 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-emerald-600">
+                            <span
+                                class="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-sky-600 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                            <span class="relative z-10 block px-6 py-3 rounded-2xl bg-neutral-950">
+                                <div class="relative z-10 flex items-center space-x-3">
+                                    <span
+                                        class="transition-all duration-500 group-hover:translate-x-1.5 text-lwhite group-hover:text-emerald-300">Begin
+                                        Journey</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-7 h-7 transition-all text-lwhite duration-500 group-hover:translate-x-1.5 group-hover:text-emerald-300">
+                                        <path
+                                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero  px-8 py-5 mt-5 max-w[1200px] mx-auto">
+        <div class="text field flex flex-col gap-3 items-center justify-center">
+            <h1 class="font-poppins font-semibold text-pblue text-center text-xl md:text-[25px]">Welcome to NovaNectar
+                Services</h1>
+            <p class="font-poppins text-dblue text-[12px] w-[260px] md:w-[720px] md:text-[18px]">We're more than just a
+                job portal — we're a bridge between ambition and opportunity. Whether you're a job seeker chasing your
+                dream role or a recruiter searching for the perfect candidate, we're here to make the connection
+                seamless, smart, and successful.</p>
+        </div>
+        <div class="flex items-center justify-center">
+            <img src="/Assets/Company.svg" alt="" class="md:w-[75%] lg:w-[50%]">
+        </div>
+    </header>
+    <img src="/Assets/wave.svg" class="w-[100%] lg:w-[100%] lg:h-[20%]" alt="">
+    <section class="bg-pblue">
+        <div class="px-8 py-5 max-w[1200px] mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <div class="text-field2 flex flex-col items-start basis-[25%]">
+                    <h1 class="text-[20px] md:text-[25px] text-lwhite font-poppins font-semibold">Our Mission</h1>
+                    <p class="font-poppins mt-3 text-dblue text-[12px] w-[260px] md:w-[420px]">To empower individuals
+                        with the right opportunities and help businesses grow by finding the right people — faster and
+                        smarter.</p>
+                </div>
+                <div class="text-field2 flex flex-col items-start basis-[25% ">
+                    <h1 class="text-[20px] md:text-[25px] text-lwhite font-poppins font-semibold">What We Do</h1>
+                    <p class="font-poppins mt-3 text-dblue text-[12px] w-[260px] md:w-[420px]">At NovaNectar Services,
+                        we connect job seekers with companies across industries, roles, and experience levels. From
+                        freshers to seasoned professionals, we help users:</p>
+                    <ul>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Discover relevant job openings
+                        </li>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Apply with ease</li>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Build professional profiles</li>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Access career guidance and tips
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-10 px-8 py-5 max-w[1200px] mx-auto">
+            <div class="text-field2 flex flex-col md:flex-row items-center justify-around basis-[25%] ">
+                <div>
+                    <h1 class="text-[20px] md:text-[25px] text-pblue font-poppins font-semibold">Why Choose Us?</h1>
+                    <ul>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Easy-to-use platform for both job
+                            seekers and recruiters
+                        </li>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Verified listings and trusted
+                            companies
+
+                        </li>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Smart job-matching algorithms
+                        </li>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Regular updates, career tips, and
+                            alerts
+                        </li>
+                        <li class="font-poppins mt-3 list-disc text-dblue text-[12px]">Fast-growing community of
+                            professionals and employers
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-field2  basis-[25%] ">
+                    <img src="/Assets/Company2.svg" alt="" class=" rounded-xl mt-5">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-dblue py-10">
+        <div class="flex items-center justify-center flex-col max-w-[1200px] mx-auto px-10 ">
+            <div class="container flex gap-5 md:flex-row flex-col items-start justify-around">
+                <div class="card-one">
+                    <div class="img flex flex-col items-start gap-2">
+                        <img class="w-[32px] rounded-full" src="/Assets/Nova Nectar Logo.jpg" alt="">
+                        <p class="font-poppins w-[56px] text-lwhite text-[12px] font-semibold">NovaNectar Services</p>
+                    </div>
+                </div>
+                <div class="card-one">
+                    <h1 class="font-poppins font-semibold text-pblue text-[20px]">Services</h1>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="homepage.html"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Home</a>
+                        </li>
+                        <li><a href="aboutus.html"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">About
+                                Us</a></li>
+                        <li><a href="#"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Jobs</a>
+                        </li>
+                        <li><a href="#"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <div class="card-one">
+                    <h1 class="font-poppins font-semibold text-pblue">Social Media</h1>
+                    <ul class="flex  gap-3 flex-wrap items-center mt-5">
+                        <li>
+                            <ion-icon name="logo-google" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-linkedin" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-facebook" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-twitter" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-instagram" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
