@@ -7,3 +7,8 @@ document.getElementById("submit-btn").addEventListener("click",function(e){
     e.preventDefault();
     alert("Submitted Successfully !");
 })
+
+function gotoJob()
+{
+    window.location.href = "jobpage.html";
+}
