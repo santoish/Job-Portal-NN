@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <header id="home" class="bg-cover w-[100%] h-screen" style="background-image: url('/Assets/Animated\ Shape.svg');">
-        <nav class="md:flex md:items-center md:justify-around  px-5 py-3 z-50 relative max-w-[1200px] mx-auto">
+    <header id="home" class="bg-cover w-[100%]" style="background-image: url('/Assets/Animated\ Shape.svg');">
+        <nav class="md:flex md:items-center md:justify-around  px-5 py-3 z-50 max-w-[1200px] mx-auto sticky">
             <div class="logo flex items-center justify-between">
                 <span class="flex items-center justify-center">
                     <img src="/Assets/Nova Nectar Logo.jpg" alt="" class="w-[32px] md:w-[56px] inline rounded-full">
@@ -279,38 +279,38 @@
             <div class="reach mt-5">
                 <div>
                     <h1 class="font-poppins font-semibold md:text-[24px] text-pblue">Reach Out Us</h1>
-                    <p class="text-dblue  font-poppins w-[240px] md:w-[560px] text-[12px] md:text-[16px] mb-3">Have
+                    <p class="text-dblue  font-poppins w-[240px] md:w-[560px] text-[12px] md:text-[16px] mb-3 mt-2">Have
                         questions, feedback, or need support? Whether you're a job seeker, employer, or recruiter, our
                         team is just a message away. Reach out to us—we'd love to hear from you!</p>
                 </div>
-                <div class="flex gap-5 flex-col md:flex-row md:gap-10">
-                    <div class="card-one">
-                        <span class="flex items-center gap-2 font-poppins font-semibold text-dblue">
-                            <ion-icon name="mail" class="text-[18px]"></ion-icon>
-                            Email
-                        </span>
-                        <p class="font-poppins mt-1 text-[12px] text-black">info@novanectar.com</p>
-                        <p class="font-poppins mt-1 text-[12px] text-black">support@novanectar.com</p>
-                        <p class="font-poppins mt-1 text-[12px] text-black">careers@novanectar.com</p>
-                    </div>
-                    <div class="card-one">
-                        <span class="flex items-center gap-2 font-poppins font-semibold text-dblue">
-                            <ion-icon name="business" class="text-[18px]"></ion-icon>
-                            Location
-                        </span>
-                        <p class="font-poppins mt-1 text-[12px] text-black">NovaNectar Services Pvt. Ltd.</p>
-                        <p class="font-poppins mt-1 text-[12px] text-black">5th Floor, Innovate Tower,</p>
-                        <p class="font-poppins mt-1 text-[12px] text-black">Bengaluru - 560102, Karnataka, India</p>
-                    </div>
-                    <div class="card-one">
-                        <span class="flex items-center gap-2 font-poppins font-semibold text-dblue">
-                            <ion-icon name="call" class="text-[18px]"></ion-icon>
-                            Phone Number
-                        </span>
-                        <p class="font-poppins mt-1 text-[12px] text-black">+91 80 1234 5678</p>
-                        <p class="font-poppins mt-1 text-[12px] text-black">+91 80 1234 5678</p>
-                        <p class="font-poppins mt-1 text-[12px] text-black">+91 80 1122 3344</p>
-                    </div>
+            </div>
+            <div class="flex gap-5 flex-col items-center justify-around md:flex-row md:gap-10 mt-5">
+                <div class="card-one basis-[25%] items-center">
+                    <span class="flex items-center gap-2 font-poppins font-semibold text-dblue">
+                        <ion-icon name="mail" class="text-[18px]"></ion-icon>
+                        Email
+                    </span>
+                    <p class="font-poppins mt-1 text-[12px] text-black">info@novanectar.com</p>
+                    <p class="font-poppins mt-1 text-[12px] text-black">support@novanectar.com</p>
+                    <p class="font-poppins mt-1 text-[12px] text-black">careers@novanectar.com</p>
+                </div>
+                <div class="card-one basis-[25%] items-center">
+                    <span class="flex items-center gap-2 font-poppins font-semibold text-dblue">
+                        <ion-icon name="business" class="text-[18px]"></ion-icon>
+                        Location
+                    </span>
+                    <p class="font-poppins mt-1 text-[12px] text-black">NovaNectar Services Pvt. Ltd.</p>
+                    <p class="font-poppins mt-1 text-[12px] text-black">5th Floor, Innovate Tower,</p>
+                    <p class="font-poppins mt-1 text-[12px] text-black">Bengaluru - 560102, Karnataka, India</p>
+                </div>
+                <div class="card-one basis-[25%] items-center">
+                    <span class="flex items-center gap-2 font-poppins font-semibold text-dblue">
+                        <ion-icon name="call" class="text-[18px]"></ion-icon>
+                        Phone Number
+                    </span>
+                    <p class="font-poppins mt-1 text-[12px] text-black">+91 80 1234 5678</p>
+                    <p class="font-poppins mt-1 text-[12px] text-black">+91 80 1234 5678</p>
+                    <p class="font-poppins mt-1 text-[12px] text-black">+91 80 1122 3344</p>
                 </div>
             </div>
         </div>
@@ -318,39 +318,47 @@
 
     <footer class="bg-dblue py-10">
         <div class="flex items-center justify-center flex-col max-w-[1200px] mx-auto px-10 ">
-            <div class="container flex gap-5 md:flex-row flex-col items-center justify-around">
+            <div class="container flex gap-5 md:flex-row flex-col items-start justify-around">
                 <div class="card-one">
                     <div class="img flex flex-col items-start gap-2">
                         <img class="w-[32px] rounded-full" src="/Assets/Nova Nectar Logo.jpg" alt="">
                         <p class="font-poppins w-[56px] text-lwhite text-[12px] font-semibold">NovaNectar Services</p>
                     </div>
                 </div>
-                <div class="card-one"> 
-                    <h1 class="font-poppins font-semibold text-pblue">Services</h1>
+                <div class="card-one">
+                    <h1 class="font-poppins font-semibold text-pblue text-[20px]">Services</h1>
                     <ul class="flex flex-col gap-3">
-                        <li><a href="#" class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Home</a></li>
-                        <li><a href="#" class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">About Us</a></li>
-                        <li><a href="#" class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Jobs</a></li>
-                        <li><a href="#" class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Contact Us</a></li>
+                        <li><a href="#"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Home</a>
+                        </li>
+                        <li><a href="#"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">About
+                                Us</a></li>
+                        <li><a href="#"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Jobs</a>
+                        </li>
+                        <li><a href="#"
+                                class="font-poppins hover:text-pblue text-lwhite text-[12px] md:text-[18px]">Contact
+                                Us</a></li>
                     </ul>
                 </div>
                 <div class="card-one">
                     <h1 class="font-poppins font-semibold text-pblue">Social Media</h1>
                     <ul class="flex  gap-3 flex-wrap items-center mt-5">
                         <li>
-                            <ion-icon name="logo-google" class="text-lwhite bg-brown p-2 rounded-full" ></ion-icon>
+                            <ion-icon name="logo-google" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
                         </li>
                         <li>
-                            <ion-icon name="logo-linkedin" class="text-lwhite bg-brown p-2 rounded-full" ></ion-icon>
+                            <ion-icon name="logo-linkedin" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
                         </li>
                         <li>
-                            <ion-icon name="logo-facebook" class="text-lwhite bg-brown p-2 rounded-full" ></ion-icon>
+                            <ion-icon name="logo-facebook" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
                         </li>
                         <li>
-                            <ion-icon name="logo-twitter" class="text-lwhite bg-brown p-2 rounded-full" ></ion-icon>
+                            <ion-icon name="logo-twitter" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
                         </li>
                         <li>
-                            <ion-icon name="logo-instagram" class="text-lwhite bg-brown p-2 rounded-full" ></ion-icon>
+                            <ion-icon name="logo-instagram" class="text-lwhite bg-brown p-2 rounded-full"></ion-icon>
                         </li>
                     </ul>
                 </div>
