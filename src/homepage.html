@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="/Assets/Vector logo.png">
+    <title>Nova Nectar Services</title>
+</head>
+
+<body>
+    <header class="bg-cover w-[100%] h-screen" style="background-image: url('/Assets/Animated\ Shape.svg');">
+        <nav class="md:flex md:items-center md:justify-around  px-5 py-3 z-50 relative max-w-[1200px] mx-auto">
+            <div class="logo flex items-center justify-between">
+                <span class="flex items-center justify-center">
+                    <img src="/Assets/Nova Nectar Logo.jpg" alt="" class="w-[32px] md:w-[56px] inline rounded-full">
+                    <h2 class="font-poppins ml-3 text-sm md:text-xl font-semibold">Nova Nectar Services</h2>
+                </span>
+                <span class="text-3xl text-black cursor-pointer md:hidden block">
+                    <ion-icon name="menu-outline" onclick="toggleBox(this)"></ion-icon>
+                </span>
+            </div>
+            <ul id="box"
+                class="bg-pblue text-center md:flex md:items-center z-10 md:z-auto md:relative absolute md:bg-[transparent]  w-full left-0 md:w-auto md:py-0 py-6 md:pl-0 pl-5 md:opacity-100 opacity-0 top-[-400px] md:top-0 transition-all ease-in-out duration-500">
+                <li class="mx-3 my-3 md:my-0">
+                    <a href="#home"
+                        class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Home</a>
+                </li>
+                <li class="mx-3 my-5 md:my-0">
+                    <a href="#service"
+                        class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Jobs</a>
+                </li>
+                <li class="mx-3 my-5 md:my-0">
+                    <a href="#about"
+                        class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">About
+                        Us</a>
+                </li>
+                <li class="mx-3 my-5 md:my-0">
+                    <a href="#about"
+                        class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Contact
+                        Us</a>
+                </li>
+                <li>
+                    <div class="flex items-center justify-center">
+                        <div class="relative group">
+                            <button
+                                class="relative inline-block p-px font-semibold leading-6 text-white bg-dblue hover:shadow-2xl cursor-pointer rounded-2xl shadow-emerald-900 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-emerald-600">
+                                <span
+                                    class="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-sky-600 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                                <span class="relative z-10 block px-6 py-3 rounded-2xl bg-neutral-950">
+                                    <div class="relative z-10 flex items-center space-x-3">
+                                        <span
+                                            class="transition-all duration-500 group-hover:translate-x-1.5 text-lwhite group-hover:text-emerald-300">Begin
+                                            Journey</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-7 h-7 transition-all text-lwhite duration-500 group-hover:translate-x-1.5 group-hover:text-emerald-300">
+                                            <path
+                                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <section class="hero max-w-[85%] mx-auto mt-10 flex items-center justify-center">
+            <div class="container flex flex-col md:flex-row items-center justify-center gap-5 p-3">
+                <div class="text-field flex flex-col gap-3 animate-upward">
+                    <div class="flex flex-col items-start justify-center ">
+                        <h1 class="font-poppins mt-2 font-semibold text-4xl md:text-6xl text-pblue">The Smarter Way to
+                        </h1>
+                        <h1 class="font-poppins mt-2 font-semibold text-4xl md:text-6xl bg-brown px-[4px] text-lwhite">
+                            Job Search
+                        </h1>
+                    </div>
+                    <p style="line-height: 15px;"
+                        class="md:w-[360px] w-[240px] font-poppins text-sm md:text-[15px] my-3 text-dblue">
+                        Powerful search tools, personalized recommendations, and real-time job alerts — everything you
+                        need to land your ideal role, all in one place.</p>
+                    <div
+                        class="last-container flex flex-col md:flex-row gap-4 items-start md:items-center justify-start">
+                        <div>
+                            <button
+                                class="bg-dblue text-lwhite px-2 py-1 text-[12px] md:text-lg md:px-4 md:py-2 shadow-dblue hover:shadow-2xl text-nowrap rounded-xl font-poppins  transform hover:scale-105 transition duration-300 ease-in-out">Join
+                                the Platform →</button>
+                        </div>
+                        <div
+                            class="flex flex-col items-center justify-center bg-pblue px-2 py-1 md:px-4 md:py-2 rounded-xl w-[125px] text-center">
+                            <h1 class="font-poppins font-semibold text-[12px] text-dblue md:text-[18px]">100K+</h1>
+                            <p class="font-poppins text-lwhite text-[10px] md:text-[12px]">Success Stories and Growing
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="animate-downward">
+                    <img src="/Assets/Background 1(Girl with Laptop)-min.jpg" alt=""
+                        class="w-[360px] md:w-[740px]  rounded-md shadow-md">
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+
+    <section class=" mt-20 md:mt-0 py-2 flex items-center justify-center">
+        <div class="container flex flex-col items-center gap-5">
+            <h1 class="font-poppins font-semibold text-black">Our Corporate Partners</h1>
+            <div class="flex items-center justify-around md:justify-between gap-5 md:gap-[70px]">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/amazon logo.svg" alt="amazon">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/apple.svg" alt="apple">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/aws logo.svg" alt="aws">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/google logo.svg" alt="google">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/facebook logo.svg" alt="facebook">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/infosys logo.svg" alt="infosys">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/microsoft logo.svg" alt="microsoft">
+                <img class="w-[16px] md:w-[60px] " src="/Assets/zoho logo.svg" alt="zoho">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimoials bg-pblue my-8  mx-auto py-4">
+        <div class="flex items-center justify-center flex-col max-w-[1200px] mx-auto px-10">
+            <div class="text-content items-center flex flex-col gap-2">
+                <h1 class="font-poppins font-semibold text-lwhite md:text-2xl underline">
+                    Success Stories That Inspire
+                </h1>
+                <p class="font-poppins text-[10px] md:text-[15px] text-center w-[240px] md:w-[420px]">
+                    Every profile, every job post, every hire—there's a story behind it. Here's how we've helped people
+                    move forward in their careers and companies.
+                </p>
+            </div>
+            <div
+                class="container px-2 py-4 mt-10 flex items-center flex-col md:flex-row gap-16 flex-wrap justify-center">
+                <div
+                    class="card-one rounded-xl px-3 pb-3 pt-14 bg-brown flex items-center justify-center flex-col relative md:basis-[10%] animate-upward">
+                    <div class="img-card  absolute bg-brown rounded-full p-1 top-[-50px]">
+                        <img class="w-[90px] h-[90px] object-cover rounded-full" src="/Assets/Men Potrait.jpg"
+                            alt="Ravi">
+                    </div>
+                    <p class="w-[240px] text-black font-poppins text-[12px] text-center">
+                        "I landed my dream job within two weeks of signing up. The platform is easy to use, and the job
+                        recommendations were spot on!"
+                    </p>
+                    <div class="small-cont mt-2 gap-2 flex items-center">
+                        <h1 class="font-poppins font-semibold text-[12px]">Ravi S., Software Developer</h1>
+                        <div class="bg-lwhite rounded-full p-[2px]">
+                            <img class="w-[25px]" src="/Assets/google logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="card-one rounded-xl px-3 pb-3 pt-14 bg-brown flex items-center justify-center flex-col relative md:basis-[10%] animate-upward">
+                    <div class="img-card  absolute bg-brown rounded-full p-1 top-[-50px]">
+                        <img class="w-[90px] h-[90px] object-cover object-top rounded-full"
+                            src="/Assets/Woman Potrait.jpg" alt="Ravi">
+                    </div>
+                    <p class="w-[240px] text-black font-poppins text-[12px] text-center">
+                        "Thanks to this portal, I finally found a company that matches my values and goals. The
+                        real-time updates and resume tips were a game changer."
+                    </p>
+                    <div class="small-cont mt-2 gap-2 flex items-center">
+                        <h1 class="font-poppins font-semibold text-[12px]">Ayesha K., Marketing Manager</h1>
+                        <div class="bg-lwhite rounded-full px-2 py-2">
+                            <img class="w-[25px]" src="/Assets/infosys logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="card-one rounded-xl px-3 pb-3 pt-14 bg-brown flex items-center justify-center flex-col relative md:basis-[10%] animate-upward">
+                    <div class="img-card  absolute bg-brown rounded-full p-1 top-[-50px]">
+                        <img class="w-[90px] h-[90px] object-cover object-top rounded-full"
+                            src="/Assets/Woman Potrait 2.jpg" alt="Ravi">
+                    </div>
+                    <p class="w-[240px] text-black font-poppins text-[12px] text-center">
+                        "As a recent graduate, I was nervous about entering the job market. This portal gave me the
+                        right exposure and tools to prepare. I got hired within a month!"
+                    </p>
+                    <div class="small-cont mt-2 gap-2 flex items-center">
+                        <h1 class="font-poppins font-semibold text-[12px]"> Meera V., Fresh Graduate</h1>
+                        <div class="bg-lwhite rounded-full px-2 py-2">
+                            <img class="w-[25px]" src="/Assets/zoho logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="card-one rounded-xl px-3 pb-3 pt-14 bg-brown flex items-center justify-center flex-col relative md:basis-[10%] animate-upward">
+                    <div class="img-card  absolute bg-brown rounded-full p-1 top-[-50px]">
+                        <img class="w-[90px] h-[90px] object-cover object-top rounded-full"
+                            src="/Assets/Men Potrait 2.jpg" alt="Ravi">
+                    </div>
+                    <p class="w-[240px] text-black font-poppins text-[12px] text-center">
+                        "What sets this portal apart is how personalized everything feels. I felt seen—not just like
+                        another resume in the system."
+                    </p>
+                    <div class="small-cont mt-2 gap-2 flex items-center">
+                        <h1 class="font-poppins font-semibold text-[12px]"> Arjun V., UX Designer</h1>
+                        <div class="bg-lwhite rounded-full p-[2px]">
+                            <img class="w-[25px]" src="/Assets/facebook logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="card-one rounded-xl px-3 pb-3 pt-14 bg-brown flex items-center justify-center flex-col relative md:basis-[10%] animate-upward">
+                    <div class="img-card  absolute bg-brown rounded-full p-1 top-[-50px]">
+                        <img class="w-[90px] h-[90px] object-cover object-top rounded-full"
+                            src="/Assets/Woman Potrait 3.jpg" alt="Ravi">
+                    </div>
+                    <p class="w-[240px] text-black font-poppins text-[12px] text-center">
+                        "What I appreciated most was the transparency. From application to interview, I was informed at
+                        every step. It made the whole experience stress-free."
+                    </p>
+                    <div class="small-cont mt-2 gap-2 flex items-center">
+                        <h1 class="font-poppins font-semibold text-[12px]"> Sneha R., Data Analyst</h1>
+                        <div class="bg-lwhite rounded-full p-[2px]">
+                            <img class="w-[25px]" src="/Assets/microsoft logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="flex items-center justify-center flex-col max-w-[1200px] mx-auto px-10 ">
+            <div class="container flex flex-col md:flex-row items-center h-max">
+                <div class="">
+                    <img src="/Assets/Contact.jpg" alt=""
+                        class="w-[360px] h-[420px] object-cover md:w-[740px] md:h-[520px] rounded-md shadow-md">
+                </div>
+                <div class="form bg-dblue px-5 py-3 md:h-[520px] md:w-[100%] flex flex-col items-center justify-center">
+                    <h1 class="font-poppins font-semibold text-lwhite text-[12px] md:text-2xl my-3">We're Here to Help You Succeed
+                    </h1>
+                    <p></p>
+                    <form id="form">
+                        <div class="container flex flex-col gap-4">
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div>
+                                    <input required
+                                        class="bg-transparent px-2 py-1 border-lwhite border-[1px] font-poppins text-[12px] md:text-[16px]  rounded-lg focus:border-pblue outline-none" 
+                                        type="text" placeholder="First Name*">
+                                </div>
+                                <div>
+                                    <input
+                                        class="bg-transparent px-2 py-1 border-lwhite border-[1px] font-poppins text-[12px] md:text-[16px]  rounded-lg focus:border-pblue outline-none" 
+                                        type="text" placeholder="Last Name">
+                                </div>
+
+                            </div>
+
+                            <input required
+                                class="bg-transparent px-2 py-1 border-lwhite border-[1px] font-poppins text-[12px] md:text-[16px]  rounded-lg focus:border-pblue outline-none" 
+                                type="email" placeholder="Email*">
+
+
+                            <input required
+                                class="bg-transparent px-2 py-1 border-lwhite border-[1px] font-poppins text-[12px] md:text-[16px]  rounded-lg focus:border-pblue outline-none" 
+                                type="tel" placeholder="Phone Number*">
+
+
+                                <button
+                                  class="relative py-2 px-8 text-dblue text-base font-bold nded-full overflow-hidden bg-lwhite rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-dblue before:to-pblue before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0 hover:text-lwhite"
+                                >
+                                  Submit
+                                </button>
+    
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
