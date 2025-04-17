@@ -6,8 +6,15 @@
         <link href="./output.css" rel="stylesheet">
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="/src/active.css">
         <link rel="icon" href="/Assets/Vector logo.png">
         <title>Jobs | Nova Nectar Services</title>
+        <style>
+            /* .job-buttons li.active{
+                background-color: #36b1fd;
+                color:white;
+            } */
+        </style>
     </head>
 <body>
     <nav class="md:flex md:items-center md:justify-around  px-5 py-3 z-50 max-w-[1200px] mx-auto">
@@ -43,7 +50,7 @@
             <li>
                 <div class="flex items-center justify-center">
                     <div class="relative group">
-                        <button onclick="gotoJob()"
+                        <button onclick="gotoJob(e)"
                             class="relative inline-block p-px font-semibold leading-6 text-white bg-dblue hover:shadow-2xl cursor-pointer rounded-2xl shadow-emerald-900 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-emerald-600">
                             <span
                                 class="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-sky-600 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
@@ -66,6 +73,534 @@
             </li>
         </ul>
     </nav>
+
+    <header class="hero  px-8 py-5 mt-5  max-w-[1200px] w-[85%] mx-auto">
+        <div class="flex items-center flex-col">
+            <div class="flex flex-col items-start">
+                <h1 class="font-poppins font-semibold text-pblue text-center text-xl md:text-[25px]">Career Match Platform</h1>
+                <p class="font-poppins text-dblue text-[12px] w-[260px] md:w-[720px] md:text-[18px] mt-4">Discover jobs that truly align with your skills, goals, and experience. Our intelligent matching system connects you with opportunities tailored just for you — saving time and helping you grow faster in the right direction.</p>
+            </div> 
+            <img src="/Assets/JobSearch.svg" alt="" class="w-[320px] md:w-[520px]">
+        </div>
+    </header>
+
+    <section>
+        <div class="px-5 py-5 max-w-[1200px] md:w-[85%] mx-auto">
+            <div class="header">
+                <h1 class="font-poppins font-semibold text-pblue text-xl md:text-[25px]">Jobs in Demand</h1>
+                <p class="font-poppins mt-2 text-dblue text-[12px] md:text-[18px]">Most Viewed and All-Time Top-Selling services</p>
+            </div>
+
+            <div class=" mt-5">
+                <ul class="job-buttons flex items-center bg-dblue p-0">
+                    <li data-target="all" class="on font-poppins text-[11px] px-2 py-1  text-lwhite md:text-[18px]  flex-[1] text-center">All</li>
+                    <li data-target="part-time" class="font-poppins text-[11px] px-2 py-1 text-lwhite md:text-[18px] flex-[1] text-center">Part-Time</li>
+                    <li data-target="full-time" class="font-poppins text-[11px] px-2 py-1 text-lwhite md:text-[18px] flex-[1] text-center">Full-Time</li>
+                    <li data-target="internship" class=" font-poppins text-[11px] px-2 py-1 text-lwhite md:text-[18px] flex-[1] text-center">Internship</li>
+                </ul>
+            </div>
+
+            <div class="job-container mt-7 items-center justify-center flex flex-col md:flex-row gap-8 flex-wrap">
+                <li data-item="full-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class=" list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/google logo.svg" alt="google">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Google</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>USA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Data Analyst</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Full-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                Just Now
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Analyze complex data sets to drive business decisions and insights. Ideal for candidates with strong analytical and SQL skills.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                800/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="part-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/facebook logo.svg" alt="Facebok">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Facebok</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Remote (India)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Customer Support Associate</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Part-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                2days Ago
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Assist customers with orders, payments, and queries via chat or call. Strong communication skills required.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                750/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="full-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/amazon logo.svg" alt="Amazon">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Amazon</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>USA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Software Developer</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Full-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 14, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Design, code, and deploy scalable applications for global clients. Work with modern tech stacks and agile methodologies.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                1200/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="full-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/TCS logo.svg" alt="TCS">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">TCS</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Chennai, Tamil Nadu
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">UI/UX Designer</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Full-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 8, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Create intuitive and engaging user interfaces. Work closely with developers and product teams to deliver seamless experiences.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                600/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="internship" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/microsoft logo.svg" alt="Microsoft">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Microsoft</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span> Noida, Uttar Pradesh
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Product Manager Intern</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Internship
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 13, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Work with cross-functional teams to define product features, conduct market research, and track user feedback. Ideal for MBA
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                700/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="full-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/zoho logo.svg" alt="Zoho">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Zoho</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Gurugram, Haryana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Network Engineer</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Full-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 8, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Manage and troubleshoot network systems. Ensure high uptime and secure connectivity for enterprise operations.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                1000/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="part-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/Accenture_logo.svg" alt="Accenture">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Accenture</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Hyderabad, Telangana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Cloud Engineer
+                            </h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Part-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 11, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Design and maintain cloud infrastructure. Support deployment and scalability of services across hybrid cloud environments.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                500/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="internship" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/Byju's_logo.svg" alt="Facebok">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Byju's</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Remote / Bengaluru
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Academic Specialist</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Internship
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 13, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Conduct live learning sessions for students and clarify academic concepts in engaging ways. Training provided.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                600/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="part-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/jio logo.svg" alt="Jio">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Jio</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Ahmedabad, Gujarat
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Field Technician</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Part-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 10, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Install and maintain network connections for customers. Requires travel to customer locations within the city.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                400/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="internship" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/hcl logo.svg" alt="HCL Tech">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">HCL Tech</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Mumbai, Maharashtra
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Finance Analyst</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Internship
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 10, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Assist in financial modeling, budgeting, and reporting. Work with business units to provide actionable insights.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                500/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="part-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/Wipro logo.svg" alt="Wipro">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Wipro</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span> Bengaluru, Karnataka
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Technical Support Engineer</h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Part-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 7, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Provide technical assistance to clients via calls and emails. Resolve hardware/software issues and ensure customer satisfaction.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                900/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="part-time" style="background-image: linear-gradient(to bottom, #36b1fd, #2d8fd4, #226eac, #145085, #023360);" class="list-none job-one rounded-[6px] px-4 py-5 basis-[28%]">
+                    <div class="f-row ">
+                        <div class="ff-row flex items-center gap-2">
+                            <span class="p-1 bg-lwhite rounded-full">
+                                <img class="w-[32px]" src="/Assets/zomato logo.svg" alt="Zomato">
+                            </span>
+                            <div class="flex flex-col items-start gap-[2px]">
+                                <h1 class="font-semibold font-poppins text-dblue text-[16px]">Zomato</h1>
+                                <p class="text-[12px] font-poppins text-lwhite">
+                                    <span><ion-icon name="location"></ion-icon></span>Remote
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fs-row mt-2">
+                            <h1 class="font-poppins text-[13px] text-lwhite">Content Writer
+                            </h1>
+                        </div>
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins bg-pblue text-black w-max px-[5px] py-[2px] text-[12px]">
+                                Part-Time
+                            </h1>
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="time" class="text-[15px] absolute top-[2px] left-[-12px]"></ion-icon>
+                                April 11, 2025
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="s-row mt-3 ">
+                        <p class="text-[12px] font-poppins text-lwhite">
+                            Write and edit food, lifestyle, and marketing content. Must have strong writing skills and creativity.
+                        </p>
+                    </div>
+                    <div class="t-row">
+                        <div class="ft-row mt-2 flex justify-start gap-5">
+                            <h1 class="font-poppins  text-lwhite w-max px-[5px] py-[2px] text-[12px] flex items-center gap-[3px] relative">
+                                <ion-icon name="logo-usd" class="text-[15px] absolute top-[4px] left-[-10px]"></ion-icon>
+                                850/m
+                            </h1>
+                            <button class="px-4 py-1 font-poppins bg-pblue text-lwhite rounded-[6px] text-[12px]">Apply</button>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>

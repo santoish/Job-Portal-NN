@@ -3,12 +3,29 @@ function toggleBox(e) {
     e.name === 'menu-outline' ? (e.name = "close-outline", box.classList.add('top-[80px]'), box.classList.add('opacity-100')) : (e.name = "menu-outline", box.classList.remove('top-[80px]'), box.classList.remove('opacity-100'))
 }
 
-document.getElementById("submit-btn").addEventListener("click",function(e){
+const submitBtn = document.getElementById("submit-btn");
+if (submitBtn) {
+  submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    alert("Submitted Successfully !");
-})
+    alert("Submitted Successfully");
+  });
+}
+
 
 function gotoJob()
 {
     window.location.href = "jobpage.html";
 }
+
+/* Job Page.html Codes */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sortBtns = document.querySelectorAll(".job-buttons > *");
+    sortBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        sortBtns.forEach((btn) => btn.classList.remove("on"));
+        btn.classList.add("on");
+      });
+    });
+  });
+  
