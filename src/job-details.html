@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="/Assets/Vector logo.png">
+    <title>Job Details | Nova Nectar Services</title>
+</head>
+
+<body>
+    <nav class="md:flex md:items-center md:justify-around  px-5 py-3 z-50 max-w-[1200px] mx-auto sticky">
+        <div class="logo flex items-center justify-between">
+            <span class="flex items-center justify-center">
+                <img src="/Assets/Nova Nectar Logo.jpg" alt="" class="w-[32px] md:w-[56px] inline rounded-full">
+                <h2 class="font-poppins ml-3 text-sm md:text-xl font-semibold">Nova Nectar Services</h2>
+            </span>
+            <span class="text-3xl text-black cursor-pointer md:hidden block">
+                <ion-icon name="menu-outline" onclick="toggleBox(this)"></ion-icon>
+            </span>
+        </div>
+        <ul id="box"
+            class="bg-pblue text-center md:flex md:items-center z-10 md:z-auto md:relative absolute md:bg-[transparent]  w-full left-0 md:w-auto md:py-0 py-6 md:pl-0 pl-5 md:opacity-100 opacity-0 top-[-400px] md:top-0 transition-all ease-in-out duration-500">
+            <li class="mx-3 my-3 md:my-0">
+                <a href="#home"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Home</a>
+            </li>
+            <li class="mx-3 my-5 md:my-0">
+                <a href="jobpage.html"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Jobs</a>
+            </li>
+            <li class="mx-3 my-5 md:my-0">
+                <a href="aboutus.html"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">About
+                    Us</a>
+            </li>
+            <li class="mx-3 my-5 md:my-0">
+                <a href="contactus.html"
+                    class="text-xl md:text-lg font-poppins duration-500 text-dblue hover:text-lwhite rounded-md md:border-none hover:bg-pblue px-3 py-2">Contact
+                    Us</a>
+            </li>
+            <li>
+                <div class="flex items-center justify-center">
+                    <div class="relative group">
+                        <button onclick="gotoJob()"
+                            class="relative inline-block p-px font-semibold leading-6 text-white bg-dblue hover:shadow-2xl cursor-pointer rounded-2xl shadow-emerald-900 transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:shadow-pblue">
+                            <span
+                                class="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-sky-600 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                            <span class="relative z-10 block px-6 py-3 rounded-2xl bg-dblue">
+                                <div class="relative z-10 flex items-center space-x-3">
+                                    <span
+                                        class="transition-all duration-500 group-hover:translate-x-1.5 text-lwhite group-hover:text-emerald-300">Begin
+                                        Journey</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-7 h-7 transition-all text-lwhite duration-500 group-hover:translate-x-1.5 group-hover:text-emerald-300">
+                                        <path
+                                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <section>
+        <div class="px-5 py-5 max-w-[1200px] md:w-[85%] mx-auto">
+            <h1 class="font-poppins text-center text-[18px] font-semibold text-pblue text-xl md:text-[25px]">Job Details
+            </h1>
+
+            <div class="job-container flex flex-col items-start mt-5 px-3">
+                <div class="job-header flex items-center gap-3">
+                    <img src="/Assets/google logo.svg" alt="google" class="w-[56px]">
+                    <div class="job-info flex-[1] gap-2">
+                        <h1 class="font-semibold font-poppins text-dblue text-[16px]">Data Analyst</h1>
+                        <p class="font-poppins text-dblue text-[16px]">Google</p>
+                        <p class="text-[12px] font-poppins text-dblue">
+                            <span><ion-icon name="location"></ion-icon></span>USA
+                        </p>
+                    </div>
+                </div>
+                <div class="job-info2 flex mt-5 items-center gap-5 justify-around ">
+                    <div class="col-1 text-center">
+                        <ion-icon name="bag-handle" class="text-[24px] text-dblue"></ion-icon>
+                        <h1 class="font-poppins text-dblue text-[12px]">
+                            Data Analyst
+                        </h1>
+                    </div>
+                    <div class="col-1 text-center">
+                        <ion-icon name="time" class="text-[24px] text-dblue"></ion-icon>
+                        <h1 class="font-poppins text-dblue text-[12px]">
+                            40hrs/W
+                        </h1>
+                    </div>
+                    <div class="col-1 text-center">
+                        <ion-icon name="logo-usd" class="text-[24px] text-dblue"></ion-icon>
+                        <h1 class="font-poppins text-dblue text-[12px]">
+                            800/M
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

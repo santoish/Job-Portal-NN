@@ -2,3 +2,7 @@
     background-color: #36b1fd;
     color:white;
 }
+
+.job-container li.delete{
+    display:none;
+}

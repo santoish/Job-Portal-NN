@@ -21,10 +21,20 @@ function gotoJob()
 
 document.addEventListener("DOMContentLoaded", () => {
     const sortBtns = document.querySelectorAll(".job-buttons > *");
+    const sortContainers = document.querySelectorAll(".job-container > *");
     sortBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
         sortBtns.forEach((btn) => btn.classList.remove("on"));
         btn.classList.add("on");
+
+        const targetData = btn.getAttribute("data-target");
+        sortContainers.forEach((item)=>{
+          item.classList.add("delete");
+          if(item.getAttribute("data-item") === targetData || targetData === "all")
+          {
+            item.classList.remove("delete");
+          }
+        });
       });
     });
   });
